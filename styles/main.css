@@ -1,0 +1,72 @@
+body{
+    /* normalize browser styles */
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: ;
+    background-image: url('../images/action.webp');
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header{
+    background-color: #0b8c8c;
+    height: 4rem;
+    box-shadow: black 2px 2px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    padding: 3px;
+}
+
+/* make all images responsive */
+img{
+    max-height: 100%;
+}
+
+/* hide menu by default. mobile first design */
+.main-menu{
+    display: none;
+}
+
+.channels-title{
+    background-color: #086666;
+    line-height: 3rem;
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
+.main{
+    box-shadow: black 2px 2px;
+    margin: .8rem;
+    background-color: #161616;
+}
+
+.channels-list{
+    list-style: none;
+    padding: 0;
+}
+
+.channels-list li{
+    height: 2rem;
+    padding: 0px 1rem;
+    border-bottom: #2d2d2d 1px solid;
+    display: flex;
+}
+
+.channels-list a{
+    line-height: 2rem; /* achieve vertical centering by matching the parent's height*/
+    display: inline-block;
+    height: 100%; /* contain embedded img within one line height */
+    color: #2d2d2d;
+    text-decoration: none;
+}
+
+.channels-list li a:nth-of-type(1){
+    flex-grow: 1; /* make the channel link span the line width excluding just the favourite button */
+}
+
+.channels-list li a:last-of-type img {
+    height: 1rem; /* smaller add-to-favourites icon*/
+    vertical-align: middle;
+}
