@@ -70,3 +70,27 @@ img{
     height: 1rem; /* smaller add-to-favourites icon*/
     vertical-align: middle;
 }
+
+/**
+ *  single channel view
+ */
+
+ video.channel-stream{
+    max-width: 100%;
+ }
+
+ .channel-single{
+     color: #2d2d2d;
+ }
+
+ .channel-title{
+    padding: 0 1rem;
+ }
+
+ .channel-description h4{
+    color: #08cccc; /* TODO: confirm the correctness according to your palette*/
+}
+
+ .channel-description{
+    padding: 0 1rem 1rem;
+}
