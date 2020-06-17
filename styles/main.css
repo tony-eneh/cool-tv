@@ -17,11 +17,13 @@ header{
     position: sticky;
     top: 0;
     padding: 3px;
+    justify-content: space-between;
 }
 
 /* make all images responsive */
 img{
     max-height: 100%;
+    max-width: 100%;
 }
 
 /* hide menu by default. mobile first design */
@@ -114,4 +116,13 @@ img{
     height: 20rem;
     width: 100%;
     background-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,212,255,0) 100%);
+}
+
+.menu-btn svg{
+    width: 2rem;
+    fill: #2d2d2d;
+}
+
+menu{
+    margin-right: 1rem;
 }
