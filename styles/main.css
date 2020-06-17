@@ -82,6 +82,7 @@ img{
 
  .channel-single{
      color: #2d2d2d;
+     position: relative; /* to help position back button and its overlay */
  }
 
  .channel-title{
@@ -100,4 +101,17 @@ img{
  .channel-description{
     padding: 0 1rem 1rem;
     background-color: #161616;
+}
+
+.arrow svg{
+    width: 2rem;
+    fill: #0b8c8c;
+    margin: 1rem;
+}
+
+.back-nav-overlay{
+    position: absolute;
+    height: 20rem;
+    width: 100%;
+    background-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,212,255,0) 100%);
 }
