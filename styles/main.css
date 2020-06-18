@@ -165,3 +165,40 @@ img{
     max-width: 1.5rem;
 }
 
+/**
+ *  for pc screens
+ */
+
+ @media screen 
+  and (min-device-width: 1200px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+      
+    .menu-btn, .close-btn{
+        display: none;
+    }
+
+    /* reset mobile values for pc */
+    .main-menu{
+        background-color: unset;
+        position: static;
+        padding: 1rem;
+        height: unset;
+        top: unset;
+        right: unset;
+        width: unset;
+        box-shadow: unset; /*darken non-menu area */
+        display: flex;
+        flex-direction: row;
+        flex-basis: 50%; /* make it span up to half of the header element's width */
+        justify-content: space-around;
+    }
+
+    .main-menu li{
+        border-bottom: none;
+    }
+
+    .main-menu li img{
+        display: none;
+    }
+    
+}
