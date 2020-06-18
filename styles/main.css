@@ -200,5 +200,13 @@ img{
     .main-menu li img{
         display: none;
     }
+
+    /**
+     *  body styles
+     */
     
+    .main{
+        max-width: 900px;
+        margin: 1rem auto;
+    }
 }
