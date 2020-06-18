@@ -18,6 +18,7 @@ header{
     top: 0;
     padding: 3px;
     justify-content: space-between;
+    z-index: 10; /* place above all body content */
 }
 
 /* make all images responsive */
@@ -25,12 +26,6 @@ img{
     max-height: 100%;
     max-width: 100%;
 }
-
-/* hide menu by default. mobile first design */
-.main-menu{
-    display: none;
-}
-
 .channels-title{
     background-color: #086666;
     line-height: 3rem;
@@ -121,9 +116,52 @@ img{
 .menu-btn svg, .close-btn svg{
     width: 2rem;
     fill: #2d2d2d;
-    vertical-align: middle;
-}
-
-menu{
     margin-right: 1rem;
 }
+
+.menu-btn{
+    display: flex; /* center inner svg*/
+}
+
+.close-btn{
+    text-align: right;
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    z-index: 20;
+}
+
+.main-menu{
+    background-color: #086666;
+    list-style: none;
+    padding: 3rem 1rem;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    width: 85vw;
+    margin: 0;
+    box-shadow: -20vw 0px 5px rgba(0, 0, 0, .5); /* darken non-menu area */
+    display: flex;
+    flex-direction: column;
+}
+
+/* utility class to hide flyout menu */
+.dock{
+    right: -200vw;
+}
+
+.main-menu li{
+    /* TODO: remove when you replace imgs with fa icon fonts */
+    height: 2rem; /* give a height so icon img tags would not be too big */
+    border-bottom: solid 1px #2d2d2d;
+    padding: .5rem;
+    display: flex; /* this and line-height below helps center text vertically*/
+    line-height: 2rem;
+}
+
+.main-menu li img{
+    padding-right: 1rem; /* give the text at the right some space */
+    max-width: 1.5rem;
+}
+
