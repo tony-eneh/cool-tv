@@ -104,6 +104,8 @@ img{
     width: 2rem;
     fill: #0b8c8c;
     margin: 1rem;
+    stroke: #000000;
+    stroke-width: 15;
 }
 
 .back-nav-overlay{
@@ -208,5 +210,20 @@ img{
     .main{
         max-width: 900px;
         margin: 1rem auto;
+        position: relative; /* to help position the back button on single channel views */
     }
+
+    /**
+     *  back button
+     */
+    .back-nav-overlay{
+        background-image: none; /* removes linear gradient background */
+    }
+
+    .arrow svg{
+        position: relative;
+        right: 5rem; /* offset it from the video */
+        filter: drop-shadow(-5px 5px 3px rgba(0, 0, 0, 0.8));
+    }
+
 }
