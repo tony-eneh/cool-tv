@@ -11,8 +11,7 @@
         <span class="logo">
             <img src="../images/cool-logo-black.png" alt="logo">
         </span>
-        <menu class="menu-wrapper">
-            <span class="menu-btn">
+            <span class="menu-btn" onclick="showMenu(event)">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 228 163">
 	                <g id="hamburger">
 		                <path id="Shape 1" class="shp0" d="M8 10L220 10L220 43L8 43L8 10Z" />
@@ -21,7 +20,8 @@
 	                </g>
                 </svg>
             </span>
-            <span class="close-btn">
+            <!-- close docked menu button -->
+            <span class="close-btn" onclick="hideMenu(event)">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
                     <g id="Folder 1">
                         <path id="Background" class="shp0" d="M58.27 18.02L478.94 438.7L438.67 478.96L18 58.29L58.27 18.02Z" />
@@ -30,7 +30,7 @@
                 </svg>
             </span>
             <ul class="main-menu">
-                <!-- TODO put menu item icons with fa -->
+                <!-- TODO: put menu item icons with fa -->
                 <li>
                     <img src="../images/person-icon.png" alt="">
                     Profile
@@ -48,7 +48,6 @@
                     Logout
                 </li>
             </ul>
-        </menu>
     </header>
     <section class="main">
         <!-- TODO put placeholder image in video element below -->
@@ -129,5 +128,7 @@
             </li>
         </ul>
     </section>     
+
+    <script src="../scripts/main.js"></script>
 </body>
 </html>

@@ -147,7 +147,7 @@ img{
 }
 
 /* utility class to hide flyout menu */
-.dock{
+.hidden-menu{
     right: -200vw;
 }
 
