@@ -1,0 +1,2 @@
+# remove all heavy psd files from source control
+images/*.psd
