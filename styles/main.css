@@ -4,9 +4,12 @@ body{
     margin: 0;
     font-size: 16px;
     font-family: ;
-    background-image: url('../images/action.webp');
+    /* used a 50% transparent black below to suppress the background image */
+    background-image: linear-gradient(rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%), url('../images/action.webp');
     background-attachment: fixed;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header{
