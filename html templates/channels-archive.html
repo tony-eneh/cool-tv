@@ -4,23 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cool TV</title>
+    <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
     <header>
         <span class="logo">
             <img src="../images/cool-logo-black.png" alt="logo">
         </span>
-        <menu>
-            <span class="menu-btn"></span>
-            <span class="close"></span>
+            <span class="menu-btn" onclick="showMenu(event)">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 228 163">
+	                <g id="hamburger">
+		                <path id="Shape 1" class="shp0" d="M8 10L220 10L220 43L8 43L8 10Z" />
+		                <path id="Shape 1 copy" class="shp0" d="M8 119L220 119L220 152L8 152L8 119Z" />
+		                <path id="Shape 1 copy 2" class="shp0" d="M8 61L220 61L220 94L8 94L8 61Z" />
+	                </g>
+                </svg>
+            </span>
+            <!-- close docked menu button -->
+            <span class="close-btn" onclick="hideMenu(event)">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+                    <g id="Folder 1">
+                        <path id="Background" class="shp0" d="M58.27 18.02L478.94 438.7L438.67 478.96L18 58.29L58.27 18.02Z" />
+                        <path id="Layer 1" class="shp0" d="M439.73 18.02L480 58.29L59.33 478.96L19.06 438.7L439.73 18.02Z" />
+                    </g>
+                </svg>
+            </span>
             <ul class="main-menu">
-                <!-- TODO put menu item icons with fa -->
-                <li>Profile</li>
-                <li>Settings</li>
-                <li>Favourites</li>
-                <li>Logout</li>
+                <!-- TODO: put menu item icons with fa -->
+                <li>
+                    <a href="#">
+                        <img src="../images/person-icon.png" alt="">
+                        Profile
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/cog.png" alt="">
+                        Settings
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/love-icon.png" alt="">
+                        Favourites
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/logout.png" alt="">
+                        Logout
+                    </a>
+                </li>
             </ul>
-        </menu>
     </header>
     <section class="main">
         <!-- TODO put placeholder image in video element below -->
@@ -30,70 +65,70 @@
         </div>
         <ul class="channels-list">
             <li>
-                <a href="#">Bein Sports</a>
+                <a href="channels-single.html">Bein Sports</a>
                 <a href="#" onclick="" class="toggle-favourites">
                     <!-- TODO use svg image instead of png for faster render -->
                     <img src="../images/love-icon.png" alt="" srcset="">
                 </a>
             </li>
             <li>
-                <a href="#">Bein Sports</a>
+                <a href="channels-single.html">Bein Sports</a>
                 <a href="#" onclick="" class="toggle-favourites">
                     <!-- TODO use svg image instead of png for faster render -->
                     <img src="../images/love-icon.png" alt="" srcset="">
                 </a>
             </li>
             <li>
-                <a href="#">Bein Sports</a>
+                <a href="channels-single.html">Bein Sports</a>
                 <a href="#" onclick="" class="toggle-favourites">
                     <!-- TODO use svg image instead of png for faster render -->
                     <img src="../images/love-icon.png" alt="" srcset="">
                 </a>
             </li>
             <li>
-                <a href="#">Bein Sports</a>
+                <a href="channels-single.html">Bein Sports</a>
                 <a href="#" onclick="" class="toggle-favourites">
                     <!-- TODO use svg image instead of png for faster render -->
                     <img src="../images/love-icon.png" alt="" srcset="">
                 </a>
             </li>
             <li>
-                <a href="#">Bein Sports</a>
+                <a href="channels-single.html">Bein Sports</a>
                 <a href="#" onclick="" class="toggle-favourites">
                     <!-- TODO use svg image instead of png for faster render -->
                     <img src="../images/love-icon.png" alt="" srcset="">
                 </a>
             </li>
             <li>
-                <a href="#">Bein Sports</a>
+                <a href="channels-single.html">Bein Sports</a>
                 <a href="#" onclick="" class="toggle-favourites">
                     <!-- TODO use svg image instead of png for faster render -->
                     <img src="../images/love-icon.png" alt="" srcset="">
                 </a>
             </li>
             <li>
-                <a href="#">Bein Sports</a>
+                <a href="channels-single.html">Bein Sports</a>
                 <a href="#" onclick="" class="toggle-favourites">
                     <!-- TODO use svg image instead of png for faster render -->
                     <img src="../images/love-icon.png" alt="" srcset="">
                 </a>
             </li>
             <li>
-                <a href="#">Bein Sports</a>
+                <a href="channels-single.html">Bein Sports</a>
                 <a href="#" onclick="" class="toggle-favourites">
                     <!-- TODO use svg image instead of png for faster render -->
                     <img src="../images/love-icon.png" alt="" srcset="">
                 </a>
             </li>
             <li>
-                <a href="#">Bein Sports</a>
+                <a href="channels-single.html">Bein Sports</a>
                 <a href="#" onclick="" class="toggle-favourites">
                     <!-- TODO use svg image instead of png for faster render -->
                     <img src="../images/love-icon.png" alt="" srcset="">
                 </a>
             </li>
             <li>
-                <a href="#">Bein Sports</a>
+                <a href="channels-single.html">Bein Sports</a>
                 <a href="#" onclick="" class="toggle-favourites">
                     <!-- TODO use svg image instead of png for faster render -->
                     <img src="../images/love-icon.png" alt="" srcset="">
@@ -101,5 +136,7 @@
             </li>
         </ul>
     </section>     
+
+    <script src="../scripts/main.js"></script>
 </body>
 </html>
