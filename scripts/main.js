@@ -17,3 +17,8 @@
     menu.classList.remove('hidden-menu');
     closeBtn.classList.remove('hidden-menu');
  }
+
+ const toggleOverlay = ()=>{
+   const navBtn = document.querySelector('.back-nav-overlay');
+   navBtn.style.display = navBtn.style.display === 'block' ? 'none' : 'block'; 
+ }

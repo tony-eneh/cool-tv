@@ -124,6 +124,8 @@ a{
     height: 20rem;
     width: 100%;
     background-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,212,255,0) 100%);
+    z-index: 1; /* place above video element to allow for click events on its anchor */
+    display: none; /* hide by default on mobile */
 }
 
 .menu-btn svg, .close-btn svg{
@@ -190,7 +192,10 @@ a{
         display: none;
     }
 
-    /* reset mobile values for pc */
+    /* reset mobile values for pc 
+     * for the original values that were reset check the .main-menu 
+     * default definition up above
+     */
     .main-menu{
         background-color: unset;
         position: static;
@@ -199,7 +204,7 @@ a{
         top: unset;
         right: unset;
         width: unset;
-        box-shadow: unset; /*darken non-menu area */
+        box-shadow: unset; 
         display: flex;
         flex-direction: row;
         flex-basis: 50%; /* make it span up to half of the header element's width */
@@ -229,6 +234,7 @@ a{
      */
     .back-nav-overlay{
         background-image: none; /* removes linear gradient background */
+        display: block;
     }
 
     .arrow svg{
