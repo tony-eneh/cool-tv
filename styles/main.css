@@ -191,7 +191,10 @@ a{
         display: none;
     }
 
-    /* reset mobile values for pc */
+    /* reset mobile values for pc 
+     * for the original values that were reset check the .main-menu 
+     * default definition up above
+     */
     .main-menu{
         background-color: unset;
         position: static;
@@ -200,7 +203,7 @@ a{
         top: unset;
         right: unset;
         width: unset;
-        box-shadow: unset; /*darken non-menu area */
+        box-shadow: unset; 
         display: flex;
         flex-direction: row;
         flex-basis: 50%; /* make it span up to half of the header element's width */
