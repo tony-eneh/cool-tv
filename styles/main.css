@@ -125,6 +125,7 @@ a{
     width: 100%;
     background-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,212,255,0) 100%);
     z-index: 1; /* place above video element to allow for click events on its anchor */
+    display: none; /* hide by default on mobile */
 }
 
 .menu-btn svg, .close-btn svg{
@@ -233,6 +234,7 @@ a{
      */
     .back-nav-overlay{
         background-image: none; /* removes linear gradient background */
+        display: block;
     }
 
     .arrow svg{
